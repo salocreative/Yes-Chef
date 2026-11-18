@@ -1,0 +1,54 @@
+/* Yes Chef Studio, enhanced tokens (v4). Shared across the pack. */
+:root{
+ --ink:#0A0A0A;--char:#131313;--steel:#242426;--line:#262629;--smoke:#8E8E93;--chalk:#ECE8E1;--white:#fff;
+ --ticket:#F2EDE4;--ticket-2:#E6DFD3;--ticket-ink:#1B1815;--ticket-mute:#6E665C;--slip:#FFFDF8;
+ --flame:#FF511B;--flame-deep:#C93A0A;--ember:#DE3860;
+ --heat:linear-gradient(100deg,#FF5C00 0%,#FF3121 55%,#DE3860 100%);
+ --sans:'Inter Tight',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif;--mono:'JetBrains Mono',ui-monospace,monospace;
+ --ease:cubic-bezier(.2,.7,.2,1);--ease-out:cubic-bezier(.16,1,.3,1);--spring:cubic-bezier(.34,1.56,.64,1);
+}
+.it{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--flame)}
+.lab{font:500 11.5px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--smoke)}
+.lab.f{color:var(--flame)}
+h1,h2,h3,h4{text-wrap:balance}p,li,dd,blockquote{text-wrap:pretty}
+
+/* ---------- order ticket v5: ticket paper, header rule, status, barcode, a subtle torn edge ---------- */
+.slip{position:relative;background:var(--ticket);color:var(--ticket-ink);font:400 13px/1.55 var(--mono);padding:20px 22px 24px;border-radius:3px 3px 0 0;
+ -webkit-mask:linear-gradient(#000 0 0) top/100% calc(100% - 11px) no-repeat,var(--tearA) bottom left/480px 12px repeat-x;mask:linear-gradient(#000 0 0) top/100% calc(100% - 11px) no-repeat,var(--tearA) bottom left/480px 12px repeat-x}
+.slip.both{border-radius:0;-webkit-mask:var(--tearB2) top left/480px 12px repeat-x,linear-gradient(#000 0 0) center/100% calc(100% - 22px) no-repeat,var(--tearA) bottom left/480px 12px repeat-x;mask:var(--tearB2) top left/480px 12px repeat-x,linear-gradient(#000 0 0) center/100% calc(100% - 22px) no-repeat,var(--tearA) bottom left/480px 12px repeat-x}
+.slip.bot{}
+.slip.white{background:var(--slip)}
+.sh{filter:drop-shadow(0 16px 20px rgba(0,0,0,.26)) drop-shadow(0 2px 2px rgba(0,0,0,.12))}
+.slip .hd{display:flex;justify-content:space-between;gap:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:11.5px;padding-bottom:10px;margin-bottom:12px;border-bottom:1.5px dashed #1b181538}
+.slip .dish{font:700 34px/1 var(--sans);letter-spacing:-.04em;margin:4px 0 12px}
+.slip .ln{display:flex;gap:8px;align-items:baseline;padding:2px 0}
+.slip .ln i{flex:1;border-bottom:1.5px dotted #1b181540;transform:translateY(-4px)}
+.slip .ln b{font-weight:700}
+.slip .st{display:flex;justify-content:space-between;gap:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-top:12px;padding-top:10px;border-top:1.5px dashed #1b181538}
+.slip .st b{color:var(--flame-deep)}
+.slip .yes{font:400 italic 30px/1.05 var(--serif);color:var(--flame-deep);margin-top:12px;padding-right:.06em}
+.slip .code{height:24px;margin-top:12px;background:repeating-linear-gradient(90deg,var(--ticket-ink) 0 2px,transparent 2px 4px,var(--ticket-ink) 4px 5px,transparent 5px 8px,var(--ticket-ink) 8px 11px,transparent 11px 12px);opacity:.88}
+.slip .ft{display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ticket-mute);margin-top:8px}
+.slip dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}.slip dt{color:var(--ticket-mute);text-transform:uppercase;font-size:10.5px;letter-spacing:.1em;padding-top:2px}.slip dd{margin:0}
+
+/* ---------- icons: single colour ---------- */
+.ico{width:1em;height:1em;display:inline-block;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+
+/* ---------- buttons: a heat haze that follows the cursor and a soft glow behind ---------- */
+.btn{--bt:var(--ink);position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;border:0;
+ background:linear-gradient(100deg,#FF5C00,#FF4A12 45%,#FF3121 75%,#DE3860) 0 0/220% 100%;color:var(--bt);font:600 15.5px/1 var(--sans);letter-spacing:-.01em;text-decoration:none;cursor:pointer;
+ transition:background-position .8s var(--ease-out),box-shadow .5s var(--ease-out),transform .3s var(--ease-out)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(140px circle at var(--bx,50%) var(--by,50%),#FFE3CF 0%,#FFB38A55 35%,transparent 70%);opacity:0;transition:opacity .45s}
+.btn:hover,.btn:focus-visible{background-position:100% 0;box-shadow:0 10px 34px -10px #ff3121b0,0 0 0 1px #ffb38a40 inset}
+.btn:hover::before,.btn:focus-visible::before{opacity:.75}
+.btn .ar{display:inline-block;transition:transform .5s var(--ease-out)}
+.btn:hover .ar{transform:translateX(3px)}
+.btn:active{transform:scale(.97)}
+.btn.gh{background:transparent;color:var(--chalk);box-shadow:inset 0 0 0 1.5px #ffffff38}
+.btn.gh::before{background:radial-gradient(160px circle at var(--bx,50%) var(--by,50%),#ff5c0040,transparent 70%)}
+.btn.gh:hover{box-shadow:inset 0 0 0 1.5px #ff7a4a,0 10px 34px -14px #ff3121aa}
+.btn.dk{background:var(--ticket-ink);color:var(--ticket)}
+.btn.dk::before{background:radial-gradient(160px circle at var(--bx,50%) var(--by,50%),#ff5c0055,transparent 70%)}
+.btn.dk:hover{box-shadow:0 10px 30px -12px #ff3121aa}
+.btn.sm{min-height:40px;padding:0 16px;font-size:14px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

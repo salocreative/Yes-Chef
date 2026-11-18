@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salo x Yes Chef Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Inter+Tight:ital,wght@0,300..900;1,500&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tear.css">
+<link rel="stylesheet" href="brand.css">
+<link rel="stylesheet" href="pack.css">
+<style>:root{--c-ux:#6E8FD0;--c-journey:#A985D6;--c-content:#E9875A;--c-ui:#4DB79B;--c-a11y:#58A9E3;--c-perf:#EA6680;--c-dev:#A8A8A0;--c-seo:#8BC468;--hi:#FF5C4D;--md:#F0A23B;--lo:#6FBF73}</style>
+</head>
+<body class="locked">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="heatmap" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".3 .59 .11 0 0 .3 .59 .11 0 0 .3 .59 .11 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues=".04 .32 .75 .87 1 1 1"/><feFuncG type="table" tableValues=".03 .05 .16 .2 .36 .62 .86"/><feFuncB type="table" tableValues=".05 .14 .37 .2 .1 .3 .7"/></feComponentTransfer></filter></svg>
+<canvas id="bgf" aria-hidden="true"></canvas><div class="bgg" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<!-- ================= GATE ================= -->
+<div id="gate" role="dialog" aria-modal="true" aria-labelledby="g-h">
+ <canvas id="gatef" aria-hidden="true"></canvas>
+ <div class="gate-in">
+  <span class="lab f" data-scramble>Salo × Yes Chef Studio</span>
+  <h1 class="h1" id="g-h" data-split>Something we <span class="it">couldn't resist.</span></h1>
+  <button class="begin" id="begin">Click to begin<small>Order up</small></button>
+ </div>
+ <p class="gate-foot">A concept pack, made by Salo</p>
+</div>
+
+<header class="top" id="top">
+ <a class="brand" href="#overview"><img class="lg-w" src="assets/img/yc-logo.svg" alt="Yes Chef Studio"><img class="lg-i" src="assets/img/yc-logo-ink.svg" alt=""><span>× Salo</span></a>
+ <nav class="nav" id="nav" aria-label="Sections"><a href="#overview">Overview</a><a href="#brand">Brand</a><a href="#kit">Kit</a><a href="#switch">Switch</a><a href="#deck">Deck</a><a href="#audit">UX audit</a><a href="#work">Work with us</a></nav>
+</header>
+
+<main>
+<!-- ================= 1 OVERVIEW ================= -->
+<section id="overview" data-tone="dark"><div class="wrap">
+ <span class="lab f" data-scramble>For the Yes Chef team · November 2026</span>
+ <h1 class="h1" data-split>Your work is excellent.<br><span class="it">Let's make sure everyone sees it.</span></h1>
+ <div class="can rv" style="--d:6"><span class="yc"><b>YC</b>You build: Webflow, migrations, support</span><span><b>S</b>We design: brand, sites, pitch creative</span><span class="yc"><b>+</b>Clients get both</span></div>
+</div><div class="cue"><i></i>Scroll</div></section>
+
+<!-- ================= 2 BRAND (dark) ================= -->
+<section id="brand" class="sheet dark" data-tone="dark"><div class="pad"><div class="wrap">
+ <span class="lab f" data-scramble>01 · Your brand, enhanced</span>
+ <div class="idea">
+  <div><h2 class="h2" data-split style="margin-top:16px">Run it like <span class="it">a kitchen.</span></h2>
+   <blockquote class="rv" style="--d:3">“Yes, Chef” is what a kitchen says when it has heard the order and will deliver it. <em>That's your promise.</em></blockquote></div>
+  <p class="rv" style="--d:4">We kept what's working and sharpened the rest. The idea was already in your writing: your Daddy Yankee case study is told in courses, The order, The cook and The plate. So work arrives as orders, services become a menu, and every project leaves the pass checked.</p>
+ </div>
+ <div class="cmp rv" id="cmp" style="--d:2" aria-label="Move across to compare today and enhanced">
+  <div class="pane was"><div class="gl"></div>
+   <div class="pnav"><img src="assets/img/yc-logo.svg" alt=""><span>Work</span><span>Services</span><span>Testimonials</span><span class="nb">Let's hop on a call →</span></div>
+   <div class="pbody"><div class="pe"><span>Web design and development, done differently</span></div><div class="ph"><h3>A radically different approach to websites</h3></div><p class="pp">Yes Chef helps you go to market faster, with a streamlined path to high-quality delivery.</p><div class="pb"><span>Let's hop on a call →</span></div>
+    <div class="media was-m"><div class="c1"><img src="assets/img/dy-frame1.webp" alt=""><span>Daddy Yankee</span></div><div class="c2"><img src="assets/work/aikido.webp" alt=""><span>Aikido</span></div></div></div>
+  </div>
+  <div class="pane now" id="now"><canvas id="nowf" aria-hidden="true"></canvas>
+   <div class="pnav"><img src="assets/img/yc-logo.svg" alt=""><span>Work</span><span>Services</span><span>Testimonials</span><span class="nb">Let's hop on a call →</span></div>
+   <div class="pbody"><div class="pe"><span>Web design and development, done differently</span></div><div class="ph"><h3>A radically different <span class="it">approach</span> to websites</h3></div><p class="pp">Yes Chef helps you go to market faster, with a streamlined path to high-quality delivery.</p><div class="pb"><span class="btn">Let's hop on a call <span class="ar">→</span></span></div>
+    <div class="media now-m" id="nowm"><div class="m1 mc" style="--z:1"><img src="assets/img/dy-frame1.webp" alt=""><span><b>Daddy Yankee</b><small>Music · 5 weeks</small></span></div><div class="m2 mc" style="--z:1.8"><img src="assets/work/aikido.webp" alt=""><span><b>Aikido</b><small>Security · Retainer</small></span></div><div class="m3 mc" style="--z:2.6"><img src="assets/work/beautifulai.webp" alt=""><span><b>Beautiful.ai</b><small>SaaS · 2× conv.</small></span></div><div class="m4" style="--z:3.4"><div class="sh"><div class="slip"><div class="hd"><span>Order 01</span><span>DY</span></div><div class="ln"><span>Ticket</span><i></i><b>5 wks</b></div><div class="st"><span>Status</span><b>Served</b></div></div></div></div></div></div>
+  </div>
+  <div class="handle"><i>⇆</i></div>
+ </div>
+ <div class="cmp-lab rv"><span>← Today</span><em>Move across to compare</em><span class="r">Enhanced →</span></div>
+ <div class="ksa">
+  <div class="rv" style="--d:1"><span data-ico="kept"></span><h4>Kept</h4><p>Your logo, your black and your flame orange. They're good, and they're yours.</p></div>
+  <div class="rv" style="--d:2"><span data-ico="sharp"></span><h4>Sharpened</h4><p>A headline face with real weight, a serif for one accent phrase, mono for the details.</p></div>
+  <div class="rv" style="--d:3"><span data-ico="added"></span><h4>Added</h4><p>Heat that moves, ticket paper for pace, the order ticket and a kitchen icon set.</p></div>
+ </div>
+
+ <div class="sub-h"><span class="lab f" data-scramble>The brand world</span><h2 class="h2" data-split style="margin-top:16px">Turn up <span class="it">the heat.</span></h2><p class="lede rv">Heat is the one thing nobody else in your space owns. It moves slowly, sits behind things and parts around the cursor. Move through it.</p></div>
+ <div class="bento">
+  <div class="tile t-pass c4 rv"><canvas data-field="pass" aria-hidden="true"></canvas><span class="lab" style="color:#fff">Heat · the hot pass</span><div class="big">Hot <span class="it">pass.</span></div><div class="stops"><i>#FF5C00</i><i>#FF3121</i><i>#DE3860</i><i>Move through it</i></div></div>
+  <div class="tile t-paper c2 rv" style="--d:1"><div class="sun"></div><span class="lab">Heat · on paper</span><div class="big">Ticket warm.</div><div class="cap"><b>Multiplied into paper.</b><span>For light pages, proposals and print.</span></div></div>
+  <div class="tile t-win c3 rv"><div class="wins">
+    <div class="win" style="--k:.6"><canvas data-field="hot" aria-hidden="true"></canvas><span>01 Order<b>220°</b></span></div>
+    <div class="win" style="--k:1.2"><canvas data-field="warm" aria-hidden="true"></canvas><span>02 Cook<b>180°</b></span></div>
+    <div class="win" style="--k:1.8"><canvas data-field="cool" aria-hidden="true"></canvas><span>03 Plate<b>65°</b></span></div></div>
+   <span class="lab" style="position:relative;z-index:3">Heat · through the pass</span><div class="cap"><span>Windows onto the heat, cooling as the job moves along. For steps and stages.</span></div></div>
+  <div class="tile t-type c3 rv" style="--d:1"><canvas data-field="type" aria-hidden="true"></canvas><span class="lab">Heat · through type</span><div class="cap"><span>Come closer: the letters warm up.</span></div></div>
+  <div class="tile t-over c3 rv" id="t-over"><span class="lab">Heat · over type</span><p class="words">Heard. <span class="it">Order up.</span> On the pass. <span class="it">Served.</span></p><div class="cap"><span>The serif heats up the closer you get. Inter stays calm.</span></div></div>
+  <div class="tile t-photo c3 rv" style="--d:1"><img src="assets/photo/the-pass.webp" alt="Chefs working at the pass in a restaurant kitchen"><img class="hm" src="assets/photo/the-pass.webp" alt="" aria-hidden="true"><div class="hglow" aria-hidden="true"></div><span class="lab">Heat · on photography</span><div class="cap"><b>Photography, warmed by hand.</b><span>Hover and the whole image slowly turns to heat.</span></div></div>
+  <div class="tile t-refl c2 rv"><span class="lab">Heat · reflected</span><div class="refl" data-tilt="14"><b>Order 01</b><span>Tilt me</span></div><div class="cap"><span>Heat catches the surface as it tilts.</span></div></div>
+  <div class="tile t-kin c2 rv" style="--d:1"><span class="lab">Type · in motion</span><div class="kin"><div class="k1">Websites,</div><div class="roll" id="roll"><span class="it">served.</span><span class="it">shipped.</span><span class="it">launched.</span><span class="it">migrated.</span><span class="it">served.</span></div></div><div class="odo"><span>Projects served</span><b id="odo">00</b></div></div>
+  <div class="tile t-num c2 rv" style="--d:2"><span class="lab">Numbers</span><div class="nums"><div><b><span data-count="5">0</span><small>wks</small></b><span>Daddy Yankee, design to live</span></div><div><b><span data-count="39">0</span></b><span>Locales, one migration</span></div><div><b><span data-count="2">0</span><small>×</small></b><span>Conversions, Beautiful.ai</span></div><div><b><span data-count="24">0</span></b><span>Projects on the homepage</span></div></div></div>
+  <div class="tile t-silver c6 rv"><span class="lab">The silverware · tilt them</span><div class="silver">
+   <div class="sv disc" data-tilt="18"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="svr" d="M50 50m-40 0a40 40 0 1 1 80 0a40 40 0 1 1-80 0"/></defs><text><textPath href="#svr">Yes Chef Studio · Kitchen open · </textPath></text></svg><span data-ico="toque"></span></div>
+   <div class="sv plate" data-tilt="14"><small>Order Nº</small><b><span data-count="7" data-dur="1600">0</span></b><small>Table YC</small></div>
+   <div class="sv num" data-tilt="14"><b><span data-count="39" data-dur="1800">0</span></b><small>Locales</small></div>
+   <div class="sv bar" data-tilt="12"><span class="it">Yes, Chef.</span><small>Salo × Yes Chef</small></div>
+  </div><div class="cap"><b>Polished steel that catches the light.</b><span>For badges, awards, numbers and sign-offs. The reflection moves as each piece tilts.</span></div></div>
+  <div class="tile t-scroll c6 rv"><span class="lab">Type · on scroll</span><p class="sline" id="sline" data-split>Great marketing teams don't fail for lack of ideas. They fail when every change needs a developer. <span class="it">We fix that.</span></p></div>
+  <div class="tile t-col c6 rv">
+   <div class="sw" style="background:#0A0A0A;color:#fff;border-right:1px solid #ffffff12"><b>Ink</b><em>#0A0A0A · grounds</em></div>
+   <div class="sw" style="background:#242426;color:#fff"><b>Steel</b><em>#242426 · surfaces</em></div>
+   <div class="sw" style="background:#F2EDE4;color:#1B1815"><b>Ticket</b><em>#F2EDE4 · pace</em></div>
+   <div class="sw" style="background:#FF511B;color:#0A0A0A"><b>Flame</b><em>#FF511B · action only</em></div>
+   <div class="sw" style="background:var(--heat);color:#0A0A0A"><b>Heat</b><em>three stops · glow only</em></div>
+  </div>
+  <div class="tile t-spec c6 rv"><span class="lab">Type · move across it</span><div class="spec" id="spec">Websites, <span class="it">served.</span></div>
+   <div class="rows"><div><span style="font:600 20px var(--sans);letter-spacing:-.02em">Inter Tight, 300 to 900</span><small>Headlines and UI</small></div><div><span style="font:400 italic 24px var(--serif);padding-right:.06em">Instrument Serif italic</span><small>One accent phrase</small></div><div><span style="font:500 14px var(--mono)">JetBrains Mono</span><small>Labels, tickets, numbers</small></div></div></div>
+ </div>
+</div></div></section>
+
+<!-- ================= 3 KIT (light) ================= -->
+<section id="kit" class="sheet light kit" data-tone="light"><div class="bgline"></div><div class="pad"><div class="wrap">
+ <span class="lab f" data-scramble>02 · The kit</span>
+ <h2 class="h2" data-split style="margin-top:16px">Tools of <span class="it">the kitchen.</span></h2>
+ <p class="lede rv">Icons, interface pieces and the order ticket. Everything a designer or developer needs to cook with the brand.</p>
+ <div class="icogrid" id="icogrid"></div>
+
+ <div class="sub-h" style="margin-top:110px"><span class="lab f" data-scramble>Buttons and UI</span><h2 class="h2" data-split style="margin-top:14px">Heat <span class="it">on touch.</span></h2><p class="lede rv">Interface pieces that warm up when you use them. Try them.</p></div>
+ <div class="ui">
+  <div class="uib rv" style="grid-column:span 3"><div class="row"><span class="btn" tabindex="0">Let's hop on a call <span class="ar">→</span></span><span class="btn gh" tabindex="0">See the work</span></div><div class="row"><span class="btn sm" tabindex="0">Book a slot</span><span class="btn sm dk" tabindex="0" style="--bf:#2a2a2d;--bt:#fff">Read the case study <span class="ar">→</span></span></div><div class="cap"><b>Buttons: a heat haze under the cursor.</b><span>The gradient shifts warmer and a soft glow lifts the button on hover and focus.</span></div></div>
+  <div class="uib rv" style="grid-column:span 3;--d:1"><div class="row"><div class="tabsx" id="tabsx"><span class="pill"></span><button class="on">Work</button><button>Services</button><button>Studio</button><button>Contact</button></div></div><div class="row"><button class="tgl" id="tgl" aria-pressed="true" aria-label="Heat on"><i></i></button><span class="chipx">New on the menu</span><span class="chipx o"><span data-ico="timer"></span>5 weeks</span></div><div class="cap"><b>Tabs, toggles and chips.</b><span>The active state is always heat. Chips carry the facts.</span></div></div>
+  <div class="uib hv rv" style="grid-column:span 2"><div class="temp" id="temp"><input type="range" min="40" max="260" value="180" aria-label="Heat"><div class="read"><span>Heat</span><b id="tempv">180°</b></div></div><div class="fld"><input placeholder="Your email" aria-label="Email field example"><i></i></div><div class="cap"><b>Inputs.</b><span>A heat underline on focus. Sliders run cold to hot.</span></div></div>
+  <div class="uib rv" style="grid-column:span 4;--d:1"><div class="row" style="flex-wrap:nowrap;gap:14px"><div class="card-ui" data-tilt="10"><div class="im"></div><div class="tx"><b>Aikido</b><small>Retainer</small></div></div><div class="card-ui" data-tilt="10"><div class="im" style="background-image:url(assets/work/beautifulai.webp)"></div><div class="tx"><b>Beautiful.ai</b><small>2× conv.</small></div></div><div class="card-ui" data-tilt="10"><div class="im" style="background-image:url(assets/work/ebury.webp)"></div><div class="tx"><b>Ebury</b><small>39 locales</small></div></div></div><div class="cap"><b>Cards tilt and catch the heat.</b><span>For work, services and team.</span></div></div>
+ </div>
+
+ <div class="sub-h" style="margin-top:110px"><span class="lab f" data-scramble>The order ticket</span><h2 class="h2" data-split style="margin-top:14px">Every job <span class="it">has a ticket.</span></h2><p class="lede rv">A long slip that turns facts into something people remember. Keep scrolling: it prints, gets heard, and tears off when it's served.</p></div>
+ <div class="tstory" id="tstory"><div class="tstage">
+  <ol class="tsteps" id="tsteps">
+   <li class="on"><b>01</b><div><h4>Printed</h4><p>The order lands: client, dish and sides.</p></div></li>
+   <li><b>02</b><div><h4>Heard</h4><p>Confirmed. Everyone knows what's coming.</p></div></li>
+   <li><b>03</b><div><h4>On the pass</h4><p>Final checks before anything goes out.</p></div></li>
+   <li><b>04</b><div><h4>Served</h4><p>Live. The ticket tears off the rail.</p></div></li>
+  </ol>
+  <div class="printer" id="printer"><div class="slot"></div><div class="feed"><div class="tk sh" id="tk">
+   <div><div class="slip p1">
+    <div class="hd"><span>Order Nº 07</span><span>Table YC</span></div>
+    <div class="ft" style="margin:0 0 10px"><span>18.11.26</span><span>14:02</span><span>Covers 6</span></div>
+    <dl><dt>Client</dt><dd>Yes Chef Studio</dd><dt>Kitchen</dt><dd>Salo</dd><dt>Dish</dt><dd>Brand refresh</dd></dl>
+    <div style="margin-top:12px;padding-top:10px;border-top:1.5px dashed #1b181538"><div class="ln"><span>1× Credentials deck</span><i></i><b>7 slides</b></div><div class="ln"><span>1× UX audit</span><i></i><b>33 notes</b></div><div class="ln"><span>1× Token kit</span><i></i><b>v2</b></div><div class="ln"><span>1× Icon set</span><i></i><b>12</b></div><div class="ln"><span>Side of heat</span><i></i><b>Extra</b></div></div>
+    <div class="perfline"><span>✂</span></div>
+   </div></div>
+   <div class="p2w" id="tk2"><div><div class="slip p2">
+    <div class="ln"><span>Service</span><i></i><b>Included</b></div><div class="ln"><span>Ticket time</span><i></i><b>One afternoon</b></div>
+    <div class="st"><span>Status</span><b id="tstatus">Printing</b></div>
+    <div class="yes">Yes, Chef.</div><div class="code"></div><div class="ft"><span>Kitchen: Salo</span><span>Thank you</span></div>
+    <div class="stamp" id="tstamp">Heard</div>
+   </div></div></div>
+  </div></div></div>
+ </div></div>
+ <div class="formats" style="grid-template-columns:repeat(3,1fr)">
+  <div class="fmt rv"><div class="scene"><div class="spike"><div class="rod"></div><div class="base"></div>
+   <div class="slip both" style="top:40px;--r:-7deg"><div class="hd"><span>No. 03</span><span>Ebury</span></div>39 locales</div><div class="slip both" style="top:80px;--r:5deg"><div class="hd"><span>No. 02</span><span>B.ai</span></div>2× conversions</div><div class="slip both" style="top:120px;--r:-3deg"><div class="hd"><span>No. 01</span><span>DY</span></div>Live in 5 weeks</div></div></div>
+   <div class="cap"><b>On the spike</b><span>Done jobs, stacked. Case studies and results.</span></div></div>
+  <div class="fmt rv" style="--d:1"><div class="scene"><div class="tag3d"><div class="str"></div><div class="slip bot"><div class="hd"><span>Tag</span><span>04</span></div><b style="font:700 22px/1.05 var(--sans);letter-spacing:-.03em;display:block">Migration</b><div style="margin-top:6px">Contentful → Webflow</div></div></div></div>
+   <div class="cap"><b>The tag</b><span>Services and labels that hang and swing.</span></div></div>
+  <div class="fmt rv" style="--d:2"><div class="scene"><div class="slip both receipt sh" data-tilt="10"><div class="hd"><span>Estimate</span><span>YC</span></div><div class="ln"><span>Design</span><i></i><b>2 wks</b></div><div class="ln"><span>Build</span><i></i><b>3 wks</b></div><div class="ln"><span>QA</span><i></i><b>3 days</b></div><div class="ln" style="border-top:1.5px solid #1b181540;margin-top:6px;padding-top:6px"><b>Ticket time</b><i></i><b>5 wks</b></div><div class="code" style="height:20px"></div></div></div>
+   <div class="cap"><b>The receipt</b><span>Proposals, scopes and timelines. Figures shown are an example.</span></div></div>
+  
+ </div>
+ <div class="seals rv"><span class="lab">The seals · hover to turn them over</span><div class="sealrow">
+  <div class="seal"><div class="fc fr"><svg viewBox="0 0 100 100"><defs><path id="sc" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text><textPath href="#sc">Order up · Yes, Chef · Served · </textPath></text></svg><span class="core">Yes.</span></div><div class="fc bk"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Approved · Salo × Yes Chef · </textPath></text></svg><span class="core">Served<br>Nov 2026</span></div></div>
+  <div class="seal s2"><div class="fc fr"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Heard · Heard · Heard · Heard · </textPath></text></svg><span class="core">Heard.</span></div><div class="fc bk"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Confirmed · on the board · </textPath></text></svg><span class="core">Order<br>Nº 07</span></div></div>
+  <div class="seal s3"><div class="fc fr"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Live in 5 weeks · Daddy Yankee · </textPath></text></svg><span class="core">5<small>wks</small></span></div><div class="fc bk"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Design to live · Oct 2026 · </textPath></text></svg><span class="core">La<br>Postal</span></div></div>
+  <div class="seal s4"><div class="fc fr"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Kitchen open · Taking orders · </textPath></text></svg><span data-ico="toque" class="core"></span></div><div class="fc bk"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Yes Chef Studio · Est. kitchen · </textPath></text></svg><span class="core">Open</span></div></div>
+ </div></div>
+ <div class="rail rv" id="rail"><span class="lab">The rail · run the cursor through it</span><div class="bar"></div><div id="railtk"></div><div class="cap"><b>Tickets flutter as you pass.</b><span>For case-study lists and launch moments.</span></div></div>
+</div></div></section>
+
+<!-- ================= 4 SWITCH (dark) ================= -->
+<section id="switch" class="sheet dark" data-tone="dark">
+ <div class="sw-stage"><div class="wrap" style="width:min(1320px,100%)">
+  <div class="sw-top"><div><span class="lab f" data-scramble>03 · Flip the switch</span><h2 class="h2" data-split style="margin-top:12px">Same words. <span class="it">New tokens.</span></h2></div>
+   <div class="sw-meter"><span id="m-t" class="on">Today</span><span class="bar"><i></i></span><span id="m-e">Enhanced</span></div></div>
+  <div class="sw-grid">
+   <div class="toks"><span class="lab">Scroll to apply each token</span><div class="track"><i></i><b></b></div><ol id="toks">
+    <li><b>Type</b><span>Poppins 400 → Inter Tight 700</span></li>
+    <li><b>Accent</b><span>None → Instrument Serif italic</span></li>
+    <li><b>Action colour</b><span>#E6E6E6 → Flame #FF511B</span></li>
+    <li><b>Shape</b><span>4px → 999px pills</span></li>
+    <li><b>Labels</b><span>Pills → JetBrains Mono</span></li>
+    <li><b>Heat</b><span>Static glow → slow, turning heat</span></li>
+    <li><b>Cards</b><span>#191919 → ticket paper, tilt and shine</span></li>
+   </ol></div>
+   <div class="mock" id="mock"><div class="mglow"></div><div class="mspin"></div>
+    <div class="mnav"><img src="assets/img/yc-logo.svg" alt="Yes Chef Studio"><span>Work</span><span>Services</span><span>Testimonials</span><span class="mb">Let's hop on a call →</span></div>
+    <div class="mhero"><span class="eb">Web design and development, done differently</span><h3>A radically different <br class="b2"><em>approach</em> to websites</h3><p class="mp">Yes Chef helps you go to market faster, with a streamlined path to high-quality delivery and none of the usual agency drag.</p><span class="mbtn">Let's hop on a call →</span></div>
+    <div class="cards"><div class="card" data-tilt="8"><div class="im" style="background-image:url(assets/img/dy-frame1.webp)"></div><div class="tx"><b>Daddy Yankee</b><small>Music · 5 weeks</small></div></div><div class="card" data-tilt="8"><div class="im" style="background-image:url(assets/work/aikido.webp)"></div><div class="tx"><b>Aikido</b><small>Security · Retainer</small></div></div><div class="card" data-tilt="8"><div class="im" style="background-image:url(assets/work/beautifulai.webp)"></div><div class="tx"><b>Beautiful.ai</b><small>SaaS · 2× conv.</small></div></div></div>
+   </div>
+  </div>
+ </div></div>
+</section>
+
+<!-- ================= 5 DECK (light shell) ================= -->
+<section id="deck" class="sheet light" data-tone="light"><div class="bgline"></div>
+ <div class="dk-shell" id="dkshell">
+  <div class="dk-head"><span class="lab f">04 · Credentials deck concept</span><h2 class="h2" style="margin-top:12px">Slide deck, <span class="it">ready to pitch.</span></h2><p>Seven slides, built from the enhanced brand.</p></div>
+  <div class="dk-win" id="dkwin"><div class="dk-fit" id="dkfit">
+
+   <div class="sl d1 on"><div class="grid"></div><canvas class="f" data-field="deck" aria-hidden="true"></canvas>
+    <div class="tp e"><img src="assets/img/yc-logo-white.svg" alt="Yes Chef Studio"><span class="lab">Credentials · 2026</span></div>
+    <h1 class="px" style="--z:.5" data-split>Websites,<br><span class="it">served.</span></h1>
+    <p class="sub e" style="--d:5">Webflow design and development for marketing teams that need to ship fast, and keep shipping after launch.</p>
+    <div class="grain"></div>
+    <div class="tkb px e" style="--z:.9;--d:3"><div class="sh"><div class="slip both"><div class="hd"><span>No. 02</span><span>B.ai</span></div><div class="dish" style="font-size:30px">2× conv.</div><div class="code" style="height:18px"></div></div></div></div>
+    <div class="tkc px e" style="--z:1.2;--d:5"><div class="sh"><div class="slip both"><div class="hd"><span>No. 03</span><span>Ebury</span></div><div class="dish" style="font-size:30px">39 locales</div><div class="code" style="height:18px"></div></div></div></div>
+    <div class="spin s1 px e" style="--z:2;--d:6"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Order up · Yes, Chef · Served · </textPath></text></svg><span class="c">Yes.</span></div>
+    <div class="spin s2 px e" style="--z:2.6;--d:7"><svg viewBox="0 0 100 100"><text><textPath href="#sc">Live in 5 weeks · Daddy Yankee · </textPath></text></svg><span class="c">5<small>wks</small></span></div>
+    <div class="tk px e" style="--z:1.5;--d:4"><div class="sh"><div class="slip both"><div class="hd"><span>Kitchen</span><span>Open</span></div><div class="dish">Modular<br>Webflow</div><div class="ln"><span>Migrations</span><i></i><b>✓</b></div><div class="ln"><span>Support</span><i></i><b>✓</b></div><div class="ln"><span>A/B testing</span><i></i><b>✓</b></div><div class="yes">Taking orders.</div><div class="code"></div></div></div></div>
+    <div class="ft"><span>Yes Chef Studio</span><span>01 / 07</span></div></div>
+
+   <div class="sl d2"><div class="grid"></div>
+    <div class="tp e"><img src="assets/img/yc-logo-white.svg" alt=""><span class="lab">The kitchen</span></div>
+    <h2 class="px" style="--z:.4" data-split>Built for teams that <span class="it">can't wait</span> on developers.</h2>
+    <p class="sub e" style="--d:5">Great marketing teams don't fail for lack of ideas. They fail when every change needs a developer. We build modular Webflow systems your team runs itself.</p>
+    <div class="stats">
+     <div class="stat e" style="--d:2" data-tilt="12"><span class="badge" data-ico="timer"></span><span class="lab">Daddy Yankee</span><b><span data-dc="5">0</span><small>weeks</small></b><span class="ds">From design to live</span></div>
+     <div class="stat e" style="--d:3" data-tilt="12"><span class="badge" data-ico="skillet"></span><span class="lab">Beautiful.ai</span><b><span data-dc="2">0</span><small>×</small></b><span class="ds">Conversions on the new homepage</span></div>
+     <div class="stat e" style="--d:4" data-tilt="12"><span class="badge" data-ico="bowl"></span><span class="lab">Ebury</span><b><span data-dc="39">0</span></b><span class="ds">Locales on one migration</span></div>
+     <div class="stat e" style="--d:5" data-tilt="12"><span class="badge" data-ico="bell"></span><span class="lab">The team</span><b><span data-dc="7">0</span><small>cities</small></b><span class="ds">One remote kitchen</span></div>
+    </div>
+    <div class="backers e" style="--d:7"><span class="lab">Regulars backed by</span><span>a16z</span><span>Y Combinator</span><span>Techstars</span><span>Entourage</span><span>Pantera</span></div>
+    <div class="ft"><span>Yes Chef Studio</span><span>02 / 07</span></div></div>
+
+   <div class="sl d3">
+    <div class="tp e"><img src="assets/img/yc-logo-white.svg" alt=""><span class="lab">Case study · Daddy Yankee</span></div>
+    <div class="left"><span class="lab f e">The order</span><h2 data-split>Thirty years of reggaetón in one scroll. <span class="it">Live in five weeks.</span></h2>
+     <div class="courses"><div class="e" style="--d:5"><h3>The order</h3><p>A home for the La Postal comeback that honors the career without becoming a museum.</p></div><div class="e" style="--d:6"><h3>The cook</h3><p>One continuous scroll in Webflow, with WebGL motion, Localization and CMS release states.</p></div><div class="e" style="--d:7"><h3>The plate</h3><p>Live in October 2026, ahead of the album. The label updates it without a ticket.</p></div></div></div>
+    <div class="imgs"><figure class="fr f3 px e" style="--z:.8;--d:3"><img src="assets/img/dy-frame2.webp" alt="Timeline chapter of daddyyankee.com"></figure><figure class="fr f1 px e" style="--z:1.4;--d:1"><img src="assets/img/dy-frame1.webp" alt="La Postal homepage of daddyyankee.com"></figure><figure class="fr f2 px e" style="--z:2.2;--d:4"><img src="assets/img/dy-frame3.webp" alt="Barrio Fino chapter of daddyyankee.com"></figure></div>
+    <div class="chips e" style="--d:8"><span class="f">5 weeks</span><span>EN + ES</span><span>Webflow + WebGL</span></div>
+    <div class="ft"><span>Yes Chef Studio</span><span>03 / 07</span></div></div>
+
+   <div class="sl d4 pp"><div class="grid"></div>
+    <div class="tp e"><img src="assets/img/yc-logo-ink.svg" alt=""><span class="lab">Selected work</span></div>
+    <h2 data-split>Orders <span class="it">served.</span></h2>
+    <p class="intro e" style="--d:3">Fintech, cybersecurity, AI and music. Built for marketing teams that change their site every week.</p>
+    <div class="work">
+     <div class="wc e" style="--d:2" data-tilt="10"><div class="im" style="background-image:url(assets/work/aikido.webp)"></div><div class="tx"><b>Aikido</b><small>Design, build, retainer</small></div></div>
+     <div class="wc e" style="--d:3" data-tilt="10"><div class="im" style="background-image:url(assets/work/beautifulai.webp)"></div><div class="tx"><b>Beautiful.ai</b><small>2× conversions</small></div></div>
+     <div class="wc e" style="--d:4" data-tilt="10"><div class="im" style="background-image:url(assets/work/ebury.webp)"></div><div class="tx"><b>Ebury</b><small>39 locales</small></div></div>
+     <div class="wc e" style="--d:5" data-tilt="10"><div class="im" style="background-image:url(assets/work/float.webp)"></div><div class="tx"><b>Float</b><small>Launch, retainer</small></div></div>
+     <div class="wc e" style="--d:6" data-tilt="10"><div class="im" style="background-image:url(assets/work/cybrary.webp)"></div><div class="tx"><b>Cybrary</b><small>Contentful → Webflow</small></div></div>
+     <div class="wc e" style="--d:7" data-tilt="10"><div class="im" style="background-image:url(assets/work/wiza.webp)"></div><div class="tx"><b>Wiza</b><small>Modular rebuild</small></div></div>
+    </div>
+    <div class="ft"><span>Yes Chef Studio</span><span>04 / 07</span></div></div>
+
+   <div class="sl d5 pp"><div class="grid"></div><canvas class="f" data-field="menu" aria-hidden="true"></canvas>
+    <div class="tp e"><img src="assets/img/yc-logo-ink.svg" alt=""><span class="lab">Services</span></div>
+    <h2 data-split>The menu.</h2>
+    <p class="note e" style="--d:3">Order one course or the full service. Projects or monthly retainers, from concept to launch and beyond.</p>
+    <ul class="menu2">
+     <li class="e" style="--d:2"><span class="c">Main</span><h3>Webflow development</h3><p>Modular, component-based builds your marketing team can run without a developer.</p></li>
+     <li class="e" style="--d:3"><span class="c">Main</span><h3>Website migrations</h3><p>WordPress, Contentful and custom builds moved to Webflow, up to 39 locales.</p></li>
+     <li class="e" style="--d:4"><span class="c">Starter</span><h3>Digital design</h3><p>Sites designed to be built, extended and tested.</p></li>
+     <li class="e" style="--d:5"><span class="c">Ongoing</span><h3>Support and A/B testing</h3><p>Retainers for launches, landing pages and experiments.</p></li>
+     <li class="new"><svg class="draw" viewBox="0 0 820 150" preserveAspectRatio="none" aria-hidden="true"><rect x="1.5" y="1.5" width="817" height="147" rx="16" pathLength="100"/></svg><span class="c">New on the menu · with Salo</span><h3>Brand and creative direction</h3><p>Identity, guidelines and pitch creative, for clients who need the brand before the build.</p><div class="st3d" aria-hidden="true"><div class="coin"><div class="face f">New<small>on the menu</small></div><div class="face b">Salo<small>× Yes Chef</small></div></div></div></li>
+    </ul>
+    <div class="ft"><span>Yes Chef Studio</span><span>05 / 07</span></div></div>
+
+   <div class="sl d6 pp"><div class="grid"></div>
+    <div class="tp e"><img src="assets/img/yc-logo-ink.svg" alt=""><span class="lab">Wall of love</span></div>
+    <blockquote class="big" data-split>“I've worked with plenty of studios and never before had such <span class="it">incredible results.”</span></blockquote>
+    <p class="who"><b>Wells Douraghy</b><span>Founder, With July</span></p>
+    <div class="st px" style="left:80px;bottom:120px;--z:1.2;--r:-4deg"><div class="sh"><div class="slip white"><p>“Their Webflow expertise shines in the top-notch website they crafted for us.”</p><cite>Giulia Bocci, Hoo Koo E Koo</cite></div></div></div>
+    <div class="st px" style="right:80px;top:150px;--z:1.6;--r:3deg"><div class="sh"><div class="slip white"><p>“We had a challenging project and timeline but the team at [Yes Chef] delivered.”</p><cite>Kevin Kitching, Reventador Global</cite></div></div></div>
+    <div class="stp" style="left:200px;top:150px;--r:-12deg;--d:10">Heard</div>
+    <div class="stp" style="right:250px;bottom:140px;--r:9deg;--d:13">Served</div>
+    <div class="stp round" style="left:46%;bottom:90px;--r:-6deg;--d:16">Order<br>up</div>
+    <div class="ft"><span>Yes Chef Studio</span><span>06 / 07</span></div></div>
+
+   <div class="sl d7"><canvas class="f" data-field="close" aria-hidden="true"></canvas>
+    <div class="tp e"><img src="assets/img/yc-logo-white.svg" alt=""><span class="lab">Next</span></div>
+    <p class="q e" style="--d:1">Got an order?</p>
+    <p class="yes px" style="--z:.6" data-split>Yes, <span class="h">Chef.</span></p>
+    <div class="cta e" style="--d:5"><span class="btn">Let's hop on a call <span class="ar">→</span></span><span class="btn gh">yeschef.studio</span></div>
+    <div class="t1 px e" style="--z:1.8;--d:6"><div class="sh"><div class="slip both"><div class="hd"><span>Order</span><span>Next</span></div><div class="dish" style="font-size:34px">Your<br>website</div><div class="ln"><span>Design</span><i></i><b>✓</b></div><div class="ln"><span>Build</span><i></i><b>✓</b></div><div class="code" style="height:20px"></div></div></div></div>
+    <div class="t2 px e" style="--z:1.2;--d:7"><div class="sh"><div class="slip both paper"><div class="hd"><span>Status</span><span>Now</span></div><div class="yes" style="margin-top:4px">Heard.</div></div></div></div>
+    <div class="seal2 e" style="--d:8"><svg class="r" viewBox="0 0 100 100"><text><textPath href="#sc">Order up · Yes, Chef · Served · </textPath></text></svg><span data-ico="toque"></span></div>
+    <div class="ft"><span>Yes Chef Studio</span><span>07 / 07</span></div></div>
+
+  </div></div>
+  <p class="dk-hint">Keep scrolling</p>
+ </div>
+</section>
+
+<!-- ================= 6 AUDIT (dark) ================= -->
+<section id="audit" class="sheet dark" data-tone="dark"><div class="pad"><div class="wrap">
+ <div class="a-prev"><span class="lab f" data-scramble>05 · UX audit</span><h2 class="h2" data-split style="margin-top:14px">Great work, <span class="it">undersold.</span></h2><p class="rv">A first look at the yeschef.studio homepage on desktop, with <b style="color:#fff" id="a-open">notes you can open</b>. The blurred ones are in the full audit.</p></div>
+ <div class="ax rv" id="ax">
+  <article class="ax-card"><header class="ax-h"><h3 class="ax-k">Salo rating</h3><span class="ax-sub" id="a-count"></span></header><div class="ax-top"><div class="ax-score"><b id="a-rate">0</b><span>/10</span></div><ul class="ax-leg" id="a-leg"></ul></div><div class="ax-areas" id="a-areas"></div><p class="a-method" id="a-method"></p></article>
+  <article class="ax-card"><header class="ax-h"><h3 class="ax-k">Lighthouse, mobile</h3><span class="ax-sub">One lab run</span></header><div class="ax-rings" id="a-rings"></div><div class="ax-vit" id="a-vit"></div><div class="ax-weight"><span class="ax-k" style="font-size:10.5px;color:var(--smoke)">Page weight, phone</span><span id="a-weight" style="display:flex;gap:6px 16px;flex-wrap:wrap"></span></div></article>
+ </div>
+ <div class="asum" id="asum"><span class="k">Salo rating</span><span class="sc"><b id="as-r">0</b><span>/10</span></span><span class="sev" id="as-s"></span><span class="k">Lighthouse</span><span class="rings" id="as-l"></span></div>
+ <p class="a-note" id="a-note"></p>
+ <div class="a-stage" id="a-stage"><div class="shot" id="a-shot"></div><div class="layer" id="a-layer"><svg class="leads" aria-hidden="true"><path id="lead"/></svg></div></div>
+ <div class="wk rv"><span class="wk-k">The good news</span><h3>What's already working well.</h3><ul class="wk-g" id="a-works"></ul></div>
+ <p class="a-src">Sources: the live page and its source code, axe-core 4.11 (WCAG 2.1 AA) and Lighthouse 13 (mobile, one lab run), captured on 18 November 2026. We had no analytics, so priorities are judged from the page itself. Prepared by Salo.</p>
+</div></div>
+<aside class="drawer" id="drawer" aria-label="Note detail" aria-hidden="true"></aside>
+</section>
+
+<!-- ================= 7 WORK WITH US (light) ================= -->
+<section id="work" class="sheet light" data-tone="light"><div class="bgline"></div><div class="pad"><div class="wrap">
+ <span class="lab f" data-scramble>06 · Work with us</span>
+ <h2 class="h2" data-split style="margin-top:16px">You build it. <span class="it">We'll make it look the part.</span></h2>
+ <div class="menu-card rv">
+  <div class="mh"><h3>Salo's menu</h3><span>For your kitchen · served alongside your builds</span></div>
+  <div class="courses2">
+   <h4>Starters</h4>
+   <div class="dish"><b>UX audits</b><i></i><em>Small plate</em><p>Every note opened, with the fix for each.</p></div>
+   <div class="dish"><b>Pitch creative</b><i></i><em>To share</em><p>Concepts and slides for your pitches. We can join the call too.</p></div>
+   <h4>Mains</h4>
+   <div class="dish"><b>Brand identity and guidelines</b><i></i><em>Signature</em><p>For clients who need the brand before the build.</p></div>
+   <div class="dish"><b>Website design for your builds</b><i></i><em>House</em><p>Webflow-ready design from a team that knows how you build.</p></div>
+   <h4>Today's special</h4>
+   <div class="dish special" style="grid-column:1/-1"><b>Your own brand, finished</b><i></i><em>New on the menu</em><p>This direction made real: guidelines, a full reference kit and a credentials deck your team can keep updating.</p></div>
+  </div>
+ </div>
+ <div class="ways">
+  <div class="way rv"><span data-ico="toque"></span><h4>By the project</h4><p>A clear scope and price for each job. Brand, site design or a pitch.</p></div>
+  <div class="way rv" style="--d:1"><span data-ico="timer"></span><h4>Flexi-Design credits</h4><p>For lots of small jobs. Buy credits, use them as work comes in.</p></div>
+  <div class="way rv" style="--d:2"><span data-ico="bell"></span><h4>Pitch partner</h4><p>We join your sales calls, and can pitch in person in London alongside you.</p></div>
+ </div>
+ <div class="contact">
+  <div class="chat rv"><canvas data-field="chat" aria-hidden="true"></canvas><h3>Contact <span class="it">us.</span></h3><div class="mails"><a href="mailto:sarah@salo.uk?subject=Yes%20Chef%20x%20Salo"><small>Sarah Levett</small><b>sarah@salo.uk</b><i>→</i></a><a href="mailto:toby@salo.uk?subject=Yes%20Chef%20x%20Salo"><small>Toby Felton</small><b>toby@salo.uk</b><i>→</i></a></div></div>
+  <div class="bill rv sh" style="--d:1"><div class="slip both"><div class="hd"><span>The bill</span><span>Table YC</span></div>
+   <div class="who"><div><b>Your host</b><span>Sarah Levett · <a href="mailto:sarah@salo.uk">sarah@salo.uk</a></span></div><div><b>Your waiter</b><span>Toby Felton · <a href="mailto:toby@salo.uk">toby@salo.uk</a></span></div><div><b>Service</b><span>Included</span></div><div><b>Date</b><span>November 2026</span></div></div>
+   <p class="note">Toby has been your waiter today. Thank you for dining with Salo.</p>
+   <svg class="sig" viewBox="0 0 230 70" aria-label="Toby's signature"><path d="M8 48c10-20 20-36 26-32 5 4-12 30-8 33 5 3 16-24 22-22 5 2-6 20 0 21 6 1 13-14 19-14 4 0-1 13 4 13 6 0 11-10 17-11 5-1 2 9 8 9 10 0 22-10 38-14M30 60c40-6 96-9 170-5"/></svg>
+   <div class="code" style="height:22px"></div></div></div>
+ </div>
+</div></div></section>
+
+<section class="loop" id="loop" data-tone="dark"><canvas data-field="loop" aria-hidden="true"></canvas><div>
+ <span class="lab f">Got an order?</span>
+ <p class="yes" data-split>Yes, Chef.</p>
+ <a class="btn gh again" href="#overview" id="again">Back to the start <span class="ar">↑</span></a>
+</div></section>
+</main>
+
+<script src="fx.js"></script>
+<script src="audit-data.js"></script>
+<script src="pack.js"></script>
+</body></html>
