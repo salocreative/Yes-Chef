@@ -43,6 +43,8 @@ const onScroll=()=>{const y=scrollY,H=document.documentElement.scrollHeight-inne
  const id=cur.id==='loop'?'work':cur.id;navA.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id));};
 addEventListener('scroll',raf1(onScroll),{passive:true});onScroll();
 $('#again').addEventListener('click',e=>{e.preventDefault();scrollTo({top:0,behavior:'smooth'})});
+/* scroll nav links ourselves so every link works from anywhere, incl. the sticky #overview the browser treats as always in view */
+[...navA,$('.brand')].forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(!id||id[0]!=='#')return;const t=document.querySelector(id);if(!t)return;e.preventDefault();scrollTo({top:id==='#overview'?0:t.getBoundingClientRect().top+scrollY,behavior:'smooth'})}));
 
 /* ---------- compare: drag, and a sweep each time it comes into view ---------- */
 (function(){const cmp=$('#cmp'),img=$('#nowm');let drag=false,anim=0;
@@ -110,18 +112,28 @@ $('#again').addEventListener('click',e=>{e.preventDefault();scrollTo({top:0,beha
 
 /* ---------- deck: grows, holds while slides change, zooms back out ---------- */
 (function(){const sec=$('#deck'),shell=$('#dkshell'),win=$('#dkwin'),fit=$('#dkfit'),slides=$$('.sl'),dots=document.createElement('div'),ttl=document.createElement('div');
- const titles=['Cover','The kitchen','Daddy Yankee','Selected work','The menu','Word of mouth','Yes, Chef.'];const N=slides.length;let cur=0;
- dots.innerHTML=titles.map((_,k)=>`<i class="${k?'':'on'}"></i>`).join('');
+ const titles=['Cover','The kitchen','Daddy Yankee','Selected work','The menu','Word of mouth','Yes, Chef.'];const N=slides.length;let cur=0,engaged=false;
+ dots.className='dots';dots.innerHTML=titles.map((_,k)=>`<i class="${k?'':'on'}"></i>`).join('');ttl.className='ttl';
+ /* on-screen forward/back controls, shown once the deck is zoomed in */
+ const ui=document.createElement('div');ui.className='dk-ui';
+ const prev=document.createElement('button');prev.type='button';prev.className='arw';prev.setAttribute('aria-label','Previous slide');prev.textContent='\u2039';
+ const next=document.createElement('button');next.type='button';next.className='arw';next.setAttribute('aria-label','Next slide');next.textContent='\u203A';
+ ui.append(prev,dots,ttl,next);shell.append(ui);
  const sizeFit=()=>fit.style.setProperty('--fs',Math.min(innerWidth/1600,innerHeight/900).toFixed(4));sizeFit();addEventListener('resize',sizeFit);
  const G=.07,E=.9;
  const big=$('.d6 .big');let st6=0;
- const go=i=>{if(i===cur)return;clearTimeout(st6);big.classList.remove('settled');if(i===5)st6=setTimeout(()=>big.classList.add('settled'),1800);slides[cur].classList.remove('on');cur=i;slides[i].classList.add('on');[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i));ttl.textContent=String(i+1).padStart(2,'0')+' '+titles[i];
+ const go=i=>{if(i===cur)return;clearTimeout(st6);big.classList.remove('settled');if(i===5)st6=setTimeout(()=>big.classList.add('settled'),1800);slides[cur].classList.remove('on');cur=i;slides[i].classList.add('on');[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i));ttl.textContent=String(i+1).padStart(2,'0')+' '+titles[i];prev.disabled=i===0;next.disabled=i===N-1;
   slides[i].querySelectorAll('[data-dc]').forEach(el=>{el.dataset.count=el.dataset.dc;FX.count(el)})};
+ prev.disabled=true;ttl.textContent='01 '+titles[0];
+ /* move to a slide by scrolling to the middle of its band, so the scroll-pin drives everything else */
+ const goTo=i=>{i=Math.max(0,Math.min(N-1,i));const span=sec.offsetHeight-innerHeight;const p=G+(i+.5)/N*(E-G);scrollTo({top:sec.getBoundingClientRect().top+scrollY+p*span,behavior:'smooth'})};
+ prev.onclick=()=>goTo(cur-1);next.onclick=()=>goTo(cur+1);
+ addEventListener('keydown',ev=>{if(!engaged)return;if(ev.key==='ArrowRight'){ev.preventDefault();goTo(cur+1)}else if(ev.key==='ArrowLeft'){ev.preventDefault();goTo(cur-1)}});
  FX.pin(sec,(p,r)=>{const g=p<G?p/G:p>E?1-(p-E)/(1-E):1;const e=g<1?1-Math.pow(1-clamp(g),3):1;
   const s0=Math.min(.62,(innerHeight*.58)/innerHeight);const s=lerp(s0,1,e);
   win.style.setProperty('--ws',s.toFixed(4));win.style.setProperty('--wy',(lerp(innerHeight*.11,0,e)).toFixed(1)+'px');win.style.setProperty('--wr',(lerp(30,0,e)/s).toFixed(1)+'px');
-  shell.style.setProperty('--ho',(1-e).toFixed(3));win.style.setProperty('--uo',e>.97?1:0);
-  top.classList.toggle('hide',e>.97&&r.top<=0&&r.bottom>=innerHeight);
+  shell.style.setProperty('--ho',(1-e).toFixed(3));shell.style.setProperty('--uo',e>.97?1:0);
+  engaged=e>.97&&r.top<=0&&r.bottom>=innerHeight;ui.classList.toggle('show',engaged);
   const i=Math.min(N-1,Math.max(0,Math.floor((p-G)/(E-G)*N)));go(i)});
  const pm=raf1(e=>{const r=win.getBoundingClientRect();fit.style.setProperty('--dx',(((e.clientX-r.left)/r.width-.5)*2).toFixed(3));fit.style.setProperty('--dy',(((e.clientY-r.top)/r.height-.5)*2).toFixed(3))});
  win.addEventListener('pointermove',pm);
